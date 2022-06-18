@@ -15,6 +15,7 @@ My poorly made portfolio web site that i'm showing because i got nothing else to
       * [Directory Structure](#directory-structure)
       * [How to Add/Remove a Project](#how-to-addremove-a-project)
       * [How Does The Translation Work](#how-does-the-translation-work)
+      * [How to Add/Remove a Music](#how-to-addremove-a-music)
       * [Reverse Proxy](#reverse-proxy)
       * [Anything Else](#anything-else)
    * [Discussion](#discussion)
@@ -87,6 +88,11 @@ Then, after these language files are read, the translation happens like this;
       }
     }
 ```
+
+### How to Add/Remove a Music
+
+To add a music, put it into the commonAssets/music folder. Make sure the name doesn't include any special character and use '\_' instead of spaces. <br>
+To remove a music, just delete it from the folder.
 
 ### Reverse Proxy
 
