@@ -18,7 +18,7 @@ Acemice hazırlanmış portfolyo web sitem.
 
 ## Proje Açıklaması
 
-Site, bir tek sayfa uygulamasıdır. (SPA)
+Site, bir tek sayfa uygulamasıdır. (SPA) <br>
 Mobil cihazlar için bir alt domaini vardır. Her iki domain de Node.js ile sunuluyor.
 
 ### Kullanılan Kütüphaneler / Teknolojiler
