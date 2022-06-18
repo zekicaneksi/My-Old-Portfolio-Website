@@ -5,7 +5,7 @@ Türkçe README için bayrağa tıklayın. <br>
 
 # zekicaneksi.com
 
-My poorly made portfolio web site.
+My poorly made portfolio web site that i'm showing because i got nothing else to show (yet).
 
 ### Table of Contents
 
@@ -145,10 +145,6 @@ Then why did i not do it? It was too much of a hustle.
 #### Is Mobile Domain Responsive Enough?
 
 Absolutely not. I made a lot of mistakes on the front end and relized them when the project was already finished. Now, fixing them is even more of a hustle than making the project from scratch. And that's why i won't fix them.
-
-#### Naming Variables
-
-Because it is a SPA and everything is just added to a one big pile of code, naming variables is a pain. I couldn't think of anything other than basically start naming everything by some kind of an identifier. I believe there are tools to solve such a problem but in my case, my solution was enough and i just didn't want to do the research, but will soon of course.
 
 ## Deployment (in my case)
 
