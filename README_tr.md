@@ -18,14 +18,14 @@ Acemice hazırlanmış portfolyo web sitem.
 
 ## Proje Açıklaması
 
-The site is a single page web aplication.
-It has a subdomain for mobile devices and both domains are served with different Node.js processes.
+Site, bir tek sayfa uygulamasıdır. (SPA)
+Mobil cihazlar için bir alt domaini vardır. Her iki domain de Node.js ile sunuluyor.
 
 ### Kullanılan Kütüphaneler / Teknolojiler
 
-For the front end, no library whatsoever is used.
-For backend, Express.js and body-parser are used.
-Nginx is used for reverse proxy.
+Front end için hiçbir kütüphane kullanılmamıştır.
+Backend için Express.js ve body-parser kütüphaneleri kullanılmıştır.
+Reverse proxy amaçlı Nginx kullanılmıştır.
 
 ### Dizin Yapısı
 ```bash
@@ -47,31 +47,30 @@ Nginx is used for reverse proxy.
         └───music
 ```
 
-Node.js is setup in the "public" folders.
+Node.js, "public" klasörülerinde bulunmaktadır.
 
 ### Nasıl Proje Eklenir/Çıkarılır
 
-The projects are located under the public/projects folders.
+Projeler public/projects klasörü altında bulunmaktadır.
 
-Every projects has their own CSS/HTML/JS files that are dynamically loaded and added to the document. So, every project must name their variables uniquely. Such as "projectOne-arrow"
+Her projenin kendine ait, dinamik olarak yüklenip dökümana eklenen CSS/HTML/JS dosyaları vardır. Yani, her projede değişkenler eşşsiz tanımlanmalıdır. "projeBir-ok" gibi.
 
-To add a project, just put the CSS/HTML/JS files into the directory. Give them the same number and name. And that is all.
+Bir proje eklemek için, klasöre projenin CSS/HTML/JS dosyalarını koymak yeterlidir. Hepsine aynı numara ve isim verilmeli. Bu kadar.
 
-To remove a project just delete the files of the project and rearrange the project numbers.
+Bir projeyi kaldırmak için ise proje dosyaları silinmeli, ve diğer projelerin numaraları tekrar ayarlanmalıdır.
 
 ### Çeviri Nasıl Çalışır
 
-There are language files under the commonAssets/languages folder. Files include key-value pairs. Like this;
+commonAssets/languages klasörü altında dil dosyaları vardır. Dosyalar anahtar-değer çiftlerini içerirler. Şu şekilde;
 ```
 	"cvDivText" : "cv things",
 	"notesDivGreetings": "Leave a message!",
 	"indexNotes" : "NOTES",
 ```
 
-Elements which have a innerText property can be translated. To be translated element should have "translate" class. and a "data-translateKey=''" attribute.
+innerText özelliğine sahip elementler çeviri işlemine tabi tutulabilirler. Çevrilecek element "translate" sınıfına üye olmalı, ve "data-translateKey=''" özelliğine sahip olmalı.
 
-Then, after these language files are read, the translation happens like this;
-
+Sonra, dil dosyaları okunduğunda, çeviri şu şekilde yapılır;
 ```js
     function translateDOM(domTree){
       let elements = domTree.getElementsByClassName('translate');
@@ -84,7 +83,7 @@ Then, after these language files are read, the translation happens like this;
 
 ### Reverse Proxy
 
-Nginx config file; (windows)
+Nginx config dosyası; (Windows)
 
 ```
 worker_processes  1;
@@ -119,63 +118,54 @@ http {
 
 ### Diğer Her Şey
 
-Anything else about the project can be inspected in the code. It is pretty self-explanatory.
-(i hope)
+Proje hakkındaki diğer her şey için kod incelenebilir. Kod kendini anlatıyor yeterince. (umarım)
 
 ## Tartışma
 
-Here, i want to talk about, in my opinion, what is done absolutely wrong and what could be better.
+Burada, fikrimce, proje hakkında neler yanlış oldu ve neler daha iyi olabilirdi onu konuşmak istiyorum.
 
 #### Design
 
-Nobody likes the design but me, apparently. Let's just agree to disagree on this matter.
+Görünüşe göre dizaynı benden başka kimse beğenmiyor. Bu konuda fikir ayrılığında karar kılalım.
 
-#### Is Mobile Domain Neccessary
+#### Mobil Alt Domaini Gerekli Mi?
 
-I believe not. I think the desktop version of the site could be responsive enough for mobile devices. Only, the projects' animations would not applicable to mobile. But an other "projectsDiv" for mobile users could be made and showed via javascript.
+İnaniyorum ki hayır. Masaüstü versiyonu mobil cihazlar için yeterince responsive olabilirdi. Yalnızca projelerin animasyonu uygun olmazdı. Fakat mobil kullanıcılar için başka bir "projectsDiv" oluşuturulabilir ve javascript ile gösterilebilirdi.
 
-Then why did i not do it? It was too much of a hustle.
+O halde neden yapmadım? Çok uğraştırırdı.
 
-#### Is Mobile Domain Responsive Enough
+#### Site Yeterince Responsive Mi?
 
-Absolutely not. Especially not to iPad's. The pencil on the table can sting your eye if you're unlucky enough.
-
-I think i should've made the font-sizes and divs more responsive. And i could use the empty places in the screen more for the changing the project and turning the CV.
-
-The "notesDiv" is a catastrophe on its own. Everything is wrong in it.
-
-#### Naming Variables
-
-Because it is a SPA and everything is just added to a one big pile of code, naming variables is a pain. I couldn't think of anything other than basically start naming everything by some kind of an identifier. I believe there are tools to solve such a problem but in my case, my solution was enough and i just didn't want to do the research, but will soon of course.
+Kesinlikle hayır. Front end kısmında çok fazla hata yaptım. Hatalarımın farkına proje halihazırda bittiğinde vardım. Artık hataları düzeltmek projeyi baştan yapmaktan daha fazla iş olacağı için düzeltmeyeceğim.
 
 ## Deployment (benim durumum için)
 
-I used AWS for everything.
-- Launched an EC2 / t2.micro x64-bit (x86) machine with the operation system Canonical, Ubuntu, 22.04 LTS
-- Installed Nginx, Nodejs and Npm on the server
-- Put the project into the server
-- Got an elastic ip addeess, and assosicated it with the machine.
-- Got my domain
-- Configured Route53 for routing
-- Got my TLS (SSL) sertificate from via Let's Encrpyt (Certbot);
+Her şey için AWS'yi kullandım (Amazon Web Services).
+- Bir EC2 / t2.micro x64-bit (x86) makinesini Canonical, Ubuntu, 22.04 LTS işletim sistemiyle başlattım.
+- Nginx, Nodejs ve Npm'i sunucuya kurdum.
+- Projeleri servera yükledim.
+- Bir elastik ip adresi alıp, makineyle eşleştirdim.
+- Domainimi aldım.
+- Route53'ü yönlendirme için ayarladım.
+- TLS (SSL) sertifikamı Let's Encrypt (Certbot) aracılığıyla edindim;
 https://letsencrypt.org/getting-started/
 https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal
 
-### Some commands and information that'll help me and maybe some of you in the future
-When you close the SSH session to the EC2 machine, the processes that you opened die. For them not to die this command is used (you use this to run node processes);
+### Bana ve bazılarınıza ilerde yardımı dokunabilecek bazı komutlar ve bilgiler
+EC2 makinesine olan SSH bağlantısını kesince, bağlantı süresince açılan processler kapanıyor. Kapanmamaları için şu komut kullanılıyor (node processleri için kullandım);
 ```
 sudo nohup node index.js &
 ```
-To stop/start nginx;
+Nginx'i durdurmak / başlatmak için;
 ```
 sudo systemctl stop nginx
 sudo systemctl start nginx
 ```
-List processes that listen to ports;
+Portları dinleyen processleri listelemek için;
 ```
 sudo lsof -i -P -n | grep LISTEN
 ```
-And finally, my final nginx.config file (that Certbot automatically created);
+Ve son olarak, nihai nginx.config dosyam (Certbot'un otomatik olarak oluşturduğu);
 ```
 user www-data;
 worker_processes auto;
