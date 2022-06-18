@@ -23,13 +23,13 @@ My poorly made portfolio web site.
 
 ## Description of the Project
 
-The site is a single page web aplication.
+The site is a single page web aplication. (SPA)<br>
 It has a subdomain for mobile devices and both domains are served with different Node.js processes.
 
 ### Used Libraries / Technologies
 
-For the front end, no library whatsoever is used.
-For backend, Express.js and body-parser are used.
+For the front end, no library whatsoever is used.<br>
+For backend, Express.js and body-parser are used.<br>
 Nginx is used for reverse proxy.
 
 ### Directory Structure
@@ -73,7 +73,8 @@ There are language files under the commonAssets/languages folder. Files include 
 	"indexNotes" : "NOTES",
 ```
 
-Elements which have a innerText property can be translated. To be translated element should have "translate" class. and a "data-translateKey=''" attribute.
+Elements which have a innerText property can be translated.<br>
+To be translated element should have ```translate``` class. and a ```data-translateKey=''``` attribute.
 
 Then, after these language files are read, the translation happens like this;
 
@@ -89,7 +90,7 @@ Then, after these language files are read, the translation happens like this;
 
 ### Reverse Proxy
 
-Nginx config file; (windows)
+Nginx config file; (Windows)
 
 ```
 worker_processes  1;
@@ -135,19 +136,15 @@ Here, i want to talk about, in my opinion, what is done absolutely wrong and wha
 
 Nobody likes the design but me, apparently. Let's just agree to disagree on this matter.
 
-#### Is Mobile Domain Neccessary
+#### Is Mobile Domain Neccessary?
 
 I believe not. I think the desktop version of the site could be responsive enough for mobile devices. Only, the projects' animations would not applicable to mobile. But an other "projectsDiv" for mobile users could be made and showed via javascript.
 
 Then why did i not do it? It was too much of a hustle.
 
-#### Is Mobile Domain Responsive Enough
+#### Is Mobile Domain Responsive Enough?
 
-Absolutely not. Especially not to iPad's. The pencil on the table can sting your eye if you're unlucky enough.
-
-I think i should've made the font-sizes and divs more responsive. And i could use the empty places in the screen more for the changing the project and turning the CV.
-
-The "notesDiv" is a catastrophe on its own. Everything is wrong in it.
+Absolutely not. I made a lot of mistakes on the front end and relized them when the project was already finished. Now, fixing them is even more of a hustle than making the project from scratch. And that's why i won't fix them.
 
 #### Naming Variables
 
@@ -162,8 +159,8 @@ I used AWS for everything.
 - Got an elastic ip addeess, and assosicated it with the machine.
 - Got my domain
 - Configured Route53 for routing
-- Got my TLS (SSL) sertificate from via Let's Encrpyt (Certbot);
-https://letsencrypt.org/getting-started/
+- Got my TLS (SSL) sertificate from via Let's Encrpyt (Certbot);<br>
+https://letsencrypt.org/getting-started/ <br>
 https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal
 
 ### Some commands and information that'll help me and maybe some of you in the future
