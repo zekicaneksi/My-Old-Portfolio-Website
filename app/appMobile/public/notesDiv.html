@@ -1,0 +1,28 @@
+<div id="notesDiv-form-container">
+    <p id="notesDiv-greetings" class="translate" data-translateKey="notesDivGreetings"></p>
+    <form autocomplete="off">
+        <input id="notesDiv-messageToSend" type="text" name="inputText" maxlength="500" placeholder="...">
+        <div id="notesDiv-flexContainer">
+            <p class="translate" data-translateKey="notesDivName"></p>
+            <input id="notesDiv-messageName" type="text" name="inputText" maxlength="30" placeholder="...">
+            <button type="submit" disabled style="display: none" aria-hidden="true"></button>
+            <div id="notesDiv-sendDiv">
+                <div id="notesDiv-pencil-container">
+                    <div id="notesDiv-pencil-body"></div>
+                    <div id="notesDiv-pencil-tip"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="notesDiv-messagesContainer">
+</div>
+<div id="notesDiv-topScroll">
+    <i id="notesDiv-arrow-up" class="notesDiv-arrow"></i>
+</div>
+<div id="notesDiv-bottomScroll">
+    <i id="notesDiv-arrow-down" class="notesDiv-arrow"></i>
+</div>
+
+<script src="notesDiv.js"></script>

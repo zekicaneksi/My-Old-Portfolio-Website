@@ -1,0 +1,30 @@
+#Walkman{
+	width:90%;
+	height:90%;
+	position:absolute;
+	top:5%;
+	right:2%;
+}
+
+#Walkman h1{
+	text-align: center;
+	color:rgb(167, 69, 69);
+	font-size: 2vw;
+	margin-top:0;
+}
+
+#Walkman p{
+	font-size: 1.2vw;
+}
+
+#Walkman img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#Walkman a{
+	position: absolute;
+	bottom: 0;
+	left:0;
+}

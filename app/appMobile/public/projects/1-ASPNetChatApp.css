@@ -1,0 +1,14 @@
+#ASPNetChatApp{
+	padding: 6%;
+}
+
+#ASPNetChatApp h1{
+	text-align: center;
+	color:rgb(167, 69, 69);
+	font-size: 7vw;
+	margin-top:0;
+}
+
+#ASPNetChatApp p{
+	font-size: 5vw;
+}

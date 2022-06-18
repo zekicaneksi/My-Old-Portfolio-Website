@@ -1,0 +1,146 @@
+#notesDiv-greetings{
+	font-size:4vw;
+	margin:0;
+	margin-top:2%;
+	text-align: center;
+}
+
+#notesDiv-form-container{
+	position:absolute;
+	width:100%;
+	height:20%;
+	overflow:auto;
+}
+
+#notesDiv-messageName, #notesDiv-messageToSend{
+	padding: 1.5%;
+	font-size: 1em;
+	font-weight: 500;
+	border: solid #ccc;
+	border-radius: 3%;
+}
+
+#notesDiv-messageToSend{
+	position:absolute;
+	width: 75%;
+	top:2%;
+	left:10%;
+}
+
+#notesDiv-messageName{
+	position:absolute;
+	width:20%;
+	left:25%;
+	top:50%;
+}
+
+#notesDiv-form-container p{
+	position:absolute;
+	font-size:2vw;
+	margin:0;
+	left:10%;
+	top:52%;
+}
+
+#notesDiv-sendDiv{
+	position:absolute;
+	width:8%;
+	height:35%;
+	left:52%;
+	top:50%;
+	background-color: #cacaca;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#notesDiv-sendDiv:hover{
+	background-color:#9b9b9b;
+}
+
+#notesDiv-pencil-container{
+	height: 65%;
+    width: 15%;
+    position: absolute;
+    top: 23%;
+    right: 42%;
+	transform: rotate(-40deg);
+}
+
+#notesDiv-pencil-body{
+    height: 70%;
+    width: 100%;
+    background-color: #C68663;
+}
+
+#notesDiv-pencil-tip{
+    height: 30%;
+    width: 100%;
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+	clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background-color: #817e7e;
+}
+
+#notesDiv-messagesContainer{
+	position:absolute;
+	height:60%;
+	width:90%;
+	top:33%;
+	left:5%;
+	border:0.3vw solid #5e5c5c;
+	overflow:hidden;
+	box-sizing: border-box;
+}
+
+#notesDiv-messagesContainer hr{
+	width:90%;
+}
+
+#notesDiv-topScroll{
+	position:absolute;
+	width:90%;
+	height:8%;
+	top:33%;
+	left:5%;
+	background-color: rgba(129, 126, 126,0.5);
+	z-index:1;
+}
+
+#notesDiv-bottomScroll{
+	position:absolute;
+	width:90%;
+	height:8%;
+	top:85%;
+	left:5%;
+	background-color: rgba(129, 126, 126,0.5);
+	z-index:1;
+}
+
+.notesDiv-arrow {
+	position:absolute;
+	left:47%;
+	border: solid rgba(93, 91, 91, 0.7);
+	border-width: 0 0.3vw 0.3vw 0;
+	padding: 2%;
+}
+
+#notesDiv-arrow-down{
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	bottom:40%;
+}
+
+#notesDiv-arrow-up{
+	top:40%;
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+}
+
+.notesDiv-msgContainer{
+	margin-left:10%;
+	width:80%;
+}
+
+.notesDiv-msg{
+	width:96%;
+	margin-left:2%;
+}

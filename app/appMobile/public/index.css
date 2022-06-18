@@ -1,0 +1,371 @@
+html{
+    height:100%;
+    width:100%;
+}
+
+body{
+    height:100%;
+    width:100%;
+    margin:0;
+    overflow: hidden;
+}
+
+.fill{
+    width:100%;
+    height:100%;
+}
+
+#background{
+    background-image: linear-gradient(#E1921B, #E4AA53);
+    height:100%;
+    width:100%;
+    z-index: 0;
+    position:absolute;
+}
+
+#id{
+    height:12%;
+    width:50%;
+    position:absolute;
+    left:45%;
+    top:16%;
+    transform: rotate(359deg);
+}
+
+#id .loader{
+    width: 5vw;
+    height: 5vw;
+    border: 5vw solid #9b9a9a;
+    border-top: 5vw solid #313f47;
+    left:25%;
+    top:35%;
+}
+
+#projects{
+    height:40%;
+    width:50%;
+    background-color: #FAE18B;
+    position:absolute;
+    left:25%;
+    top:33%;
+    transform: rotate(22deg);
+    border-radius: 1%;
+    border-style: outset;
+    border-width:0.15vw;
+    border-color:#f0d272;
+}
+
+#projects,
+#projects::before,
+#projects::after {
+  /* Styles to distinguish sheets from one another */
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+  border: 1px solid #bbb;
+}
+
+#projects::before,
+#projects::after {
+  content: "";
+  position: absolute;
+  height: 95%;
+  width: 99%;
+  background-color: #FAE18B;
+}
+
+#projects::before {
+  right: 15px;
+  top: 0;
+  transform: rotate(-1deg);
+  z-index: -1;
+}
+
+#projects::after {
+  top: 5px;
+  right: -5px;
+  transform: rotate(1deg);
+  z-index: -2;
+}
+
+#projects p{
+    position:absolute;
+    left:6%;
+    font-size:10vw;
+    font-family: Helvetica, sans-serif;
+    top:10%;
+    color:rgb(70, 70, 53)
+}
+
+#projects .loader{
+    width: 10vw;
+    height: 10vw;
+    border: 10vw solid #9b9a9a;
+    border-top: 10vw solid #313f47;
+    left:25%;
+    top:30%
+}
+
+.flag{
+    height:10%;
+    width:25%;
+    position:absolute;
+    top:2%;
+}
+
+.flag img{
+    border-radius: 50%;
+}
+
+#walkman{
+    height:20%;
+    width:25%;
+    background-color: #989292;
+    position:absolute;
+    top:4%;
+    right:65%;
+    border-radius: 10%;
+    cursor: default;
+}
+
+#walkman select{
+    width:85%;
+    height:50%;
+    position:absolute;
+    top:12%;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    left:7.5%;
+    font-size: 4vw;
+    background-color: #C4C4C4;
+    padding:3%;
+    outline: none;
+    cursor: pointer;
+}
+
+#walkman select:hover{
+    overflow-y:auto;
+}
+
+#walkman select::-webkit-scrollbar {
+    width: 2vw;
+  }
+  
+#walkman select::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+#walkman select::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+#walkman select::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+#walkman select option:checked{
+    background-color: #C4C4C4;
+}
+
+@keyframes slide {
+    to{
+         transform: translate(-100%);
+    }
+}
+
+.slide{
+    animation: slide 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation: slide 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#walkman button{
+    border-radius: 50%;
+    width:45%;
+    height:25%;
+    position:absolute;
+    top:64%;
+    left:26%;
+}
+
+.slider{
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    border-radius: 25%;;
+    width:75%;
+    height: 3.5%;
+    background-color: #6e6e6e;
+    position:absolute;
+    top:90%;
+    left:12.5%;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3vw;
+    height: 3vw;
+    background: #4b6992;
+    cursor: pointer;
+    border-radius: 40%;
+}
+
+.playShape{
+    height: 70%;
+    width: 50%;
+    position:absolute;
+    left:32%;
+    top:15%;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+    background-color: #676464;
+}
+
+.pauseShape{
+    height: 60%;
+    width: 45%;
+    border-right: 1vw solid #676464;
+    border-left: 1vw solid #676464;
+    box-sizing: border-box;
+    position:absolute;
+    top:20%;
+    left:30%;
+}
+
+#notebook{
+    height:20%;
+    width:30%;
+    background-color: #F9FBFF;
+    position:absolute;
+    top:75%;
+    right:50%;
+    transform: rotate(312deg);
+}
+
+#notebook p{
+    position:absolute;
+    left:20%;
+    font-size:5vw;
+}
+
+#notebook .loader{
+    width: 5vw;
+    height: 5vw;
+    border: 5vw solid #9b9a9a;
+    border-top: 5vw solid #313f47;
+    left:20%;
+    top:35%;
+}
+
+.pencil-container{
+    height: 65%;
+    width: 5%;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+}
+
+.pencil-body {
+    height: 90%;
+    width: 100%;
+    background-color: #C68663;
+}
+
+.pencil-tip {
+    height: 10%;
+    width: 100%;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #676464;
+}
+
+.loader {
+	position:absolute;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hover-glow:hover{
+    box-shadow: 0 0 2vw rgba(0, 255, 0, 0.6);
+    cursor: pointer;
+}
+
+.glow{
+    box-shadow: 0 0 1vw rgba(35, 15, 218, 0.6);
+}
+
+.popUp{
+    display:block;
+    position:absolute;
+    top:10%;
+    left:10%;
+    animation: popup 0.7s;
+}
+
+.popDown{
+    animation: popdown 0.5s;
+}
+
+#removePopUpDiv{
+    position:absolute;
+    justify-content: center;
+    width:100%;
+    height:15%;
+    bottom:0;
+    background-color: rgba(78, 84, 78, 0.6);
+    cursor: pointer;
+}
+
+#removePopUpDiv a{
+    position: relative;
+    left: 15%;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 35vw;
+    color:rgb(213, 213, 213);
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+@keyframes popup{
+    0%{
+        transform: scale(0.5);
+    }
+    60%{
+        transform: scale(1.1);
+    }
+    70%{
+        transform: scale(1.2);
+    }
+    80%{
+        transform: scale(1);
+    }
+    90%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes popdown {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.2);
+    }
+}

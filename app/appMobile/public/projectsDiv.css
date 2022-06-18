@@ -1,0 +1,64 @@
+#projectsDiv{
+    position: absolute;
+    width:70%;
+    height:70%;
+    left:15%;
+}
+
+.projects-throwDiv{
+    position:absolute;
+    display: flex;
+    width:100%;
+    height:10%;
+    top:0;
+    background-color: rgba(78, 84, 78, 0.6);
+    cursor: pointer;
+    justify-content: center;
+}
+
+.projects-throwDiv a{
+    position: relative;
+    right: 15%;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 24vw;
+    color:rgb(213, 213, 213);
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+}
+
+.projects-topPage, .projects-bottomPage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #FBDB6A, #EDC020);
+}
+
+.projects-bottomPage{
+    z-index: 1;
+}
+
+.projects-topPage{
+    z-index: 2;
+}
+
+.projects-throw-anim{
+    animation: 0.7s throw;
+}
+
+@keyframes throw {
+    from {
+      top:0%;
+    }
+    to {
+      top:-120%;
+    }
+  }
+
+.projects-topPage-projects, .projects-bottomPage-projects{
+    height:90%;
+    width:100%;
+    position: absolute;
+    top:10%;
+    overflow: auto;
+}

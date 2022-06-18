@@ -1,0 +1,20 @@
+#project-Walkman{
+	padding: 6%;
+}
+
+#project-Walkman h1{
+	text-align: center;
+	color:rgb(167, 69, 69);
+	font-size: 7vw;
+	margin-top:0;
+}
+
+#project-Walkman p{
+	font-size: 5vw;
+}
+
+#project-Walkman img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}

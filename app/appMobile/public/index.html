@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Zeki Can EKŞİ</title>
+  <meta name="description" content="Portfolio Site">
+  <meta name="author" content="Zeki Can EKŞİ">
+
+  <meta property="og:title" content="Zeki Can EKŞİ">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Portfolio Site">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="commonAssets/icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="commonAssets/icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="commonAssets/icon/favicon-16x16.png">
+	<link rel="manifest" href="commonAssets/icon/site.webmanifest">
+
+  <link rel="stylesheet" href="index.css">
+
+  <style></style>
+</head>
+
+<body>
+    <script>
+      if (screen.width >= 900) {
+        if(document.location.href.indexOf('m.')!=-1)
+        document.location=document.location.href.replace('m.', '');
+      }
+    </script>
+  
+    <div class="fill">
+      <div id="background">
+      </div>
+  
+        <div id="id" class="hover-glow glow">
+          <div class="loader"></div>
+          <img src="commonAssets/images/id.jpg" width="100%" height="100%">
+        </div>
+  
+        <div id="projects" class="hover-glow glow">
+          <div class="loader"></div>
+          <p class="translate" data-translateKey="indexProjects"></p>
+        </div>
+  
+        <div class="flag" style="right:30%;" onclick="switchLanguage('tr')">
+          <img src="commonAssets/images/flag_tr.png" width="100%" height="100%" class="hover-glow glow">
+        </div>
+  
+        <div class="flag" style="right:2%;" onclick="switchLanguage('en')">
+          <img src="commonAssets/images/flag_uk.png" width="100%" height="100%" class="hover-glow glow">
+        </div>
+  
+        <div id="walkman" class="hover-glow glow">
+          <select id="SongsSelect" name="Songs" size="6" onchange="(() => {if(index!=document.getElementById('SongsSelect').selectedIndex)setWalkmanButton('play'); else {if(isSongPlaying)setWalkmanButton('pause');else setWalkmanButton('play');}})()">
+
+          </select>
+          <button onclick="playback()" class="hover-glow">
+            <div class="playShape"></div>
+            <div class="pauseShape" hidden></div>
+          </button>
+          <input id="volumeSlider" type="range" min="0" max="100" value="50" class="slider" oninput="(() => {if(gainNode!=undefined)gainNode.gain.setValueAtTime(document.getElementById('volumeSlider').value / 100, ctx.currentTime);})()">
+        </div>
+  
+        <div id="notebook" class="hover-glow glow">
+          <div class="loader"></div>
+          <p class="translate" data-translateKey="indexNotes"></p>
+          <p style="top:10%;">----------</p>
+          <p style="top:20%;">----------</p>
+          <p style="top:30%;">----------</p>
+          <p style="top:40%;">----------</p>
+          <p style="top:50%;">----------</p>
+          <p style="top:60%;">----------</p>
+          <div class="pencil-container">
+            <div class="pencil-tip"></div>
+            <div class="pencil-body"></div>
+          </div>
+        </div>
+    
+      <div id="cvDiv" hidden></div>
+      <div id="projectsDiv" hidden></div>
+      <div id="notesDiv" hidden></div>
+        
+      <div id="removePopUpDiv" onclick="RemovePopUp()" hidden>
+        <a>&#8250;</a>
+      </div>
+    </div>
+  
+    <script src="index.js"></script>
+  
+  </body>
+  </html>

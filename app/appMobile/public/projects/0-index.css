@@ -1,0 +1,20 @@
+#index{
+padding: 6%;
+}
+
+#index h2{
+	margin-top:10%;
+	text-align: center;
+	color: #a74545;
+}
+
+#index ol{
+	margin-top:10%;
+	margin-left:6%;
+}
+
+#index li{
+	font-size: 5vw;
+	margin-top:10%;
+}
+
