@@ -10,6 +10,7 @@ Acemice hazırlanmış, (henüz) başka gösterecek bir şeyim olmadığı için
       * [Dizin Yapısı](#dizin-yapısı)
       * [Nasıl Proje Eklenir/Çıkarılır](#nasıl-proje-eklenirçıkarılır)
       * [Çeviri Nasıl Çalışır](#çeviri-nasıl-çalışır)
+      * [Müzik Nasıl Eklenir/Çıkarılır](#müzik-nasıl-eklenirçıkarılır)
       * [Reverse Proxy](#reverse-proxy)
       * [Diğer Her Şey](#diğer-her-şey)
    * [Tartışma](#tartışma)
@@ -81,6 +82,11 @@ Sonra, dil dosyaları okunduğunda, çeviri şu şekilde yapılır;
       }
     }
 ```
+
+### Müzik Nasıl Eklenir/Çıkarılır
+
+Eklenilmesi istenen müzik, commonAssets/music klasörüne özel harf içermeden, boşluk yerine '\_' çizgi kullanılarak atılmalı. <br>
+Müzik çıkarmak için ise, istenmeyen müzik klasörden silinir.
 
 ### Reverse Proxy
 
