@@ -25,10 +25,14 @@
 
 <body>
   <script>
-    if (screen.width < 900) {
-      if(document.location.href.indexOf('m.')===-1)
-      document.location=document.location.href.replace(document.location.hostname, 'm.'+document.location.hostname);
-    }
+	if (screen.width < 900) {
+	      if(document.location.href.indexOf('m.')===-1){
+		  if(document.location.href.indexOf('www') === -1)
+	      document.location=document.location.href.replace(document.location.hostname, 'm.'+document.location.hostname);
+		    else
+		      document.location=document.location.href.replace(document.location.hostname, 'm.'+document.location.hostname.replace('www.',''));
+	      }
+	    }
   </script>
 
   <div class="fill">
