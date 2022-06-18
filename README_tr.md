@@ -23,8 +23,8 @@ Mobil cihazlar için bir alt domaini vardır. Her iki domain de Node.js ile sunu
 
 ### Kullanılan Kütüphaneler / Teknolojiler
 
-Front end için hiçbir kütüphane kullanılmamıştır.
-Backend için Express.js ve body-parser kütüphaneleri kullanılmıştır.
+Front end için hiçbir kütüphane kullanılmamıştır.<br>
+Backend için Express.js ve body-parser kütüphaneleri kullanılmıştır.<br>
 Reverse proxy amaçlı Nginx kullanılmıştır.
 
 ### Dizin Yapısı
@@ -68,7 +68,8 @@ commonAssets/languages klasörü altında dil dosyaları vardır. Dosyalar anaht
 	"indexNotes" : "NOTES",
 ```
 
-innerText özelliğine sahip elementler çeviri işlemine tabi tutulabilirler. Çevrilecek element "translate" sınıfına üye olmalı, ve "data-translateKey=''" özelliğine sahip olmalı.
+innerText özelliğine sahip elementler çeviri işlemine tabi tutulabilirler.<br>
+Çevrilecek element ```translate``` sınıfına üye olmalı, ve ```data-translateKey=''``` özelliğine sahip olmalı.
 
 Sonra, dil dosyaları okunduğunda, çeviri şu şekilde yapılır;
 ```js
@@ -126,7 +127,7 @@ Burada, fikrimce, proje hakkında neler yanlış oldu ve neler daha iyi olabilir
 
 #### Design
 
-Görünüşe göre dizaynı benden başka kimse beğenmiyor. Bu konuda fikir ayrılığında karar kılalım.
+Görünüşe göre dizaynı benden başka kimse beğenmiyor. Bu konuda fikir ayrılığına karar kılalım.
 
 #### Mobil Alt Domaini Gerekli Mi?
 
@@ -147,8 +148,8 @@ Her şey için AWS'yi kullandım (Amazon Web Services).
 - Bir elastik ip adresi alıp, makineyle eşleştirdim.
 - Domainimi aldım.
 - Route53'ü yönlendirme için ayarladım.
-- TLS (SSL) sertifikamı Let's Encrypt (Certbot) aracılığıyla edindim;
-https://letsencrypt.org/getting-started/
+- TLS (SSL) sertifikamı Let's Encrypt (Certbot) aracılığıyla edindim;<br>
+https://letsencrypt.org/getting-started/ <br>
 https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal
 
 ### Bana ve bazılarınıza ilerde yardımı dokunabilecek bazı komutlar ve bilgiler
