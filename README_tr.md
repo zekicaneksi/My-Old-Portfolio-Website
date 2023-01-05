@@ -1,6 +1,6 @@
 # zekicaneksi.com
 
-Acemice hazırlanmış, (henüz) başka gösterecek bir şeyim olmadığı için gösterdiğim portfolyo web sitem.
+Kişisel portfolio web sitem.
 
 ### İçindekiler
 
