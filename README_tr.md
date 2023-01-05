@@ -13,7 +13,6 @@ Kişisel portfolio web sitem.
       * [Müzik Nasıl Eklenir/Çıkarılır](#müzik-nasıl-eklenirçıkarılır)
       * [Reverse Proxy](#reverse-proxy)
       * [Diğer Her Şey](#diğer-her-şey)
-   * [Tartışma](#tartışma)
 <!--te-->
 
 ## Proje Açıklaması
@@ -125,21 +124,3 @@ http {
 ### Diğer Her Şey
 
 Proje hakkındaki diğer her şey için kod incelenebilir. Kod kendini anlatıyor yeterince. (umarım)
-
-## Tartışma
-
-Burada, fikrimce, proje hakkında neler yanlış oldu ve neler daha iyi olabilirdi onu konuşmak istiyorum.
-
-#### Design
-
-Görünüşe göre dizaynı benden başka kimse beğenmiyor. Bu konuda fikir ayrılığına karar kılalım.
-
-#### Mobil Alt Domaini Gerekli Mi?
-
-İnaniyorum ki hayır. Masaüstü versiyonu mobil cihazlar için yeterince responsive olabilirdi. Yalnızca projelerin animasyonu uygun olmazdı. Fakat mobil kullanıcılar için başka bir "projectsDiv" oluşuturulabilir ve javascript ile gösterilebilirdi.
-
-O halde neden yapmadım? Çok uğraştırırdı.
-
-#### Site Yeterince Responsive Mi?
-
-Kesinlikle hayır. Front end kısmında çok fazla hata yaptım. Hatalarımın farkına proje halihazırda bittiğinde vardım. Artık hataları düzeltmek projeyi baştan yapmaktan daha fazla iş olacağı için düzeltmeyeceğim.
