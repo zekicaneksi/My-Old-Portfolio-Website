@@ -18,7 +18,6 @@ My portfolio website.
       * [How to Add/Remove a Music](#how-to-addremove-a-music)
       * [Reverse Proxy](#reverse-proxy)
       * [Anything Else](#anything-else)
-   * [Discussion](#discussion)
 <!--te-->
 
 ## Description of the Project
@@ -132,21 +131,3 @@ http {
 
 Anything else about the project can be inspected in the code. It is pretty self-explanatory.
 (i hope)
-
-## Discussion
-
-Here, i want to talk about, in my opinion, what is done absolutely wrong and what could be better.
-
-#### Design
-
-Nobody likes the design but me, apparently. Let's just agree to disagree on this matter.
-
-#### Is Mobile Domain Neccessary?
-
-I believe not. I think the desktop version of the site could be responsive enough for mobile devices. Only, the projects' animations would not applicable to mobile. But an other "projectsDiv" for mobile users could be made and showed via javascript.
-
-Then why did i not do it? It was too much of a hustle.
-
-#### Is Mobile Domain Responsive Enough?
-
-Absolutely not. I made a lot of mistakes on the front end and relized them when the project was already finished. Now, fixing them is even more of a hustle than making the project from scratch. And that's why i won't fix them.
