@@ -5,7 +5,7 @@ Türkçe README için bayrağa tıklayın. <br>
 
 # zekicaneksi.com
 
-My poorly made portfolio web site that i'm showing because i got nothing else to show (yet).
+My portfolio website.
 
 ### Table of Contents
 
