@@ -3,9 +3,9 @@
 Türkçe README için bayrağa tıklayın. <br>
 (For the README in Turkish, click the flag.)  
 
-# zekicaneksi.com
+# My Old Portfolio Website
 
-My portfolio website.
+My old portfolio website.
 
 ### Table of Contents
 
